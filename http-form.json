@@ -1,0 +1,6 @@
+{
+  "lab": "HADES_TARGET_LAB",
+  "scenario": "HTTP form action",
+  "note": "Hidden non-interactive form points to an .invalid URL; no submission occurs. Detector should report an HTTP form action.",
+  "synthetic": true
+}

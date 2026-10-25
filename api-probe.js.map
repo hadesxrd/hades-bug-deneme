@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "api-probe.js",
+  "sourceRoot": "",
+  "sources": [
+    "../src/routes.js"
+  ],
+  "names": [],
+  "mappings": "AAAA",
+  "sourcesContent": [
+    "/* A deliberately discoverable set of API references for static scanner coverage.\n   These are local fixture paths, and this file does not issue requests automatically. */\nconst OPENAPI_TEST_FIXTURE = './openapi.json';\nconst MOCK_DEBUG_API = '/api/v1/debug/config.json';\nconst MOCK_ADMIN_API = '/api/v1/admin/metrics.json';\nconst MOCK_USER_API = '/api/v1/users/1002.json';\nconst SCHEMA_REFERENCE = 'openapi.json';\n//# sourceMappingURL=api-probe.js.map\n"
+  ]
+}

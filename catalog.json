@@ -1,0 +1,20 @@
+{
+  "lab": "HADES_TARGET_LAB",
+  "synthetic": true,
+  "version": "1.0.0",
+  "products": [
+    {
+      "id": "demo-101",
+      "name": "Hayali Dashboard",
+      "price_try": 0,
+      "availability": "test_only"
+    },
+    {
+      "id": "demo-102",
+      "name": "API Test Paketi",
+      "price_try": 0,
+      "availability": "test_only"
+    }
+  ],
+  "notice": "Yalnızca laboratuvar örneğidir; gerçek ticari veri içermez."
+}

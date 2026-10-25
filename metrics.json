@@ -1,0 +1,11 @@
+{
+  "lab": "HADES_TARGET_LAB",
+  "synthetic": true,
+  "scenario": "missing_admin_authorization_fixture",
+  "dashboard": {
+    "fakeUsers": 42,
+    "fakeRevenue": 0,
+    "fakeTickets": 7
+  },
+  "warning": "Bu dosya halka açık statik demodur; gerçek sistem yöneticisi verisi değildir."
+}

@@ -1,0 +1,111 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "HADES Target Lab — Synthetic API",
+    "version": "1.0.0",
+    "description": "NO REAL DATA. GitHub Pages serves public static JSON. Local Python server simulates BOLA and permissive CORS."
+  },
+  "servers": [
+    {
+      "url": "./",
+      "description": "Same origin, use repository subpath on GitHub Pages"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "DemoUserHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Demo-User",
+        "description": "Synthetic identity header for localhost mode only."
+      }
+    }
+  },
+  "security": [
+    {
+      "DemoUserHeader": []
+    }
+  ],
+  "paths": {
+    "/api/v1/health.json": {
+      "get": {
+        "summary": "Lab health check",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/public/catalog.json": {
+      "get": {
+        "summary": "Public synthetic catalog",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Catalog"
+          }
+        }
+      }
+    },
+    "/api/v1/users/1001.json": {
+      "get": {
+        "summary": "Synthetic user 1001",
+        "security": [
+          {
+            "DemoUserHeader": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User 1001"
+          },
+          "401": {
+            "description": "Required for local dynamic API"
+          }
+        }
+      }
+    },
+    "/api/v1/users/1002.json": {
+      "get": {
+        "summary": "Synthetic user 1002",
+        "security": [
+          {
+            "DemoUserHeader": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User 1002"
+          },
+          "401": {
+            "description": "Required for local dynamic API"
+          }
+        }
+      }
+    },
+    "/api/v1/admin/metrics.json": {
+      "get": {
+        "summary": "Synthetic admin dashboard — intentionally missing access check in local mode",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Demo metrics"
+          }
+        }
+      }
+    },
+    "/api/v1/debug/config.json": {
+      "get": {
+        "summary": "Debug config test fixture",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Demo config"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+# This is a public synthetic test lab; no secrets or real identities exist here.
+Disallow: /api/v1/debug/
+Disallow: /backup/

@@ -1,0 +1,15 @@
+{
+  "lab": "HADES_TARGET_LAB",
+  "synthetic": true,
+  "scenario": "debug_configuration_exposure",
+  "app_env": "DEMO_ONLY",
+  "debug": true,
+  "internal_service": "http://localhost.invalid:8443/mock-admin",
+  "featureFlags": {
+    "showBetaPanel": true,
+    "legacyApiEnabled": true
+  },
+  "supportEmail": "support@example.invalid",
+  "demo_only_secret": "NOT-A-REAL-SECRET-DO-NOT-USE",
+  "warning": "Tamamen kurgusal ayarlar; gerçek servis veya sır yoktur."
+}

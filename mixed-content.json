@@ -1,0 +1,6 @@
+{
+  "lab": "HADES_TARGET_LAB",
+  "scenario": "synthetic mixed content reference",
+  "note": "The landing page includes an inert http://*.invalid script reference only to exercise a scanner mixed-content warning. Browsers do not execute this fixture.",
+  "synthetic": true
+}

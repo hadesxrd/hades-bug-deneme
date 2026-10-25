@@ -1,0 +1,63 @@
+{
+  "name": "HADES BUG DENEME / v2.2",
+  "synthetic_data_only": true,
+  "scanner_version": "2.2",
+  "target": "https://hadesxrd.github.io/hades-target-lab/",
+  "deterministic_finding_codes": [
+    "mixed",
+    "form-http",
+    "source-map",
+    "possible-static-secret"
+  ],
+  "expected_inventory": [
+    "API endpoints",
+    "OpenAPI schema",
+    "Firebase config",
+    "JS dependency versions",
+    "source map sources"
+  ],
+  "conditional_server_header_codes": [
+    "csp",
+    "framing",
+    "hsts",
+    "nosniff",
+    "referrer"
+  ],
+  "not_emulatable_on_github_pages": [
+    "Set-Cookie misconfiguration",
+    "HTTP redirect chain",
+    "invalid TLS certificate",
+    "dynamic BOLA/IDOR",
+    "dynamic CORS origin reflection"
+  ],
+  "fixtures": [
+    {
+      "path": "index.html",
+      "kind": "mixed-content inert .invalid link + HTTP form"
+    },
+    {
+      "path": "assets/app.js",
+      "kind": "fake token patterns, firebase and dependency versions"
+    },
+    {
+      "path": "assets/app.js.map",
+      "kind": "public v3 source map"
+    },
+    {
+      "path": "openapi.json",
+      "kind": "read-only API schema"
+    },
+    {
+      "path": "api/v1/users/1001.json",
+      "kind": "synthetic user object"
+    },
+    {
+      "path": "api/v1/users/1002.json",
+      "kind": "synthetic user object"
+    },
+    {
+      "path": "api/v1/debug/config.json",
+      "kind": "synthetic configuration"
+    }
+  ]
+}

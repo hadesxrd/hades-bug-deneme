@@ -1,0 +1,15 @@
+{
+  "lab": "HADES_TARGET_LAB",
+  "scenario": "synthetic_user_fixture",
+  "owner_id": "1002",
+  "user": {
+    "id": 1002,
+    "displayName": "Ece Example",
+    "email": "ece@example.invalid",
+    "organization": "Hades Synthetic",
+    "role": "member",
+    "invoiceRef": "DEMO-INV-1002",
+    "isSynthetic": true
+  },
+  "warning": "Bu dosya statiktir; gerçek IDOR kanıtı değildir."
+}

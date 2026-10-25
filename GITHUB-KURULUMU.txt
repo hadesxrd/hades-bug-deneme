@@ -1,0 +1,18 @@
+HADES BUG DENEME / HADES WEB GUVENLIK v2.2
+==============================================
+
+1. https://github.com/hadesxrd/hades-target-lab adresini ac.
+2. ZIP dosyasini cikar. Tek basina ZIP'i yukleme.
+3. index.html DOSYASINI ve diger dosyalari depodaki main EN UST DIZINE yukle.
+   Yanlis: bug bounty/index.html
+   Dogru: index.html
+4. Settings -> Pages -> Deploy from a branch -> main -> /(root) -> Save.
+5. Test URL: https://hadesxrd.github.io/hades-target-lab/
+6. Hades v2.2 (127.0.0.1:8878) panelinde ANA SAYFA URL'sini tara.
+7. JavaScript / Source map / OpenAPI seceneklerini ac.
+8. BEKLENEN-SONUCLAR-v2.2.md dosyasiyla karsilastir.
+
+NOT: GitHub Pages statiktir. Bu paketteki tum API JSON'lari sahtedir.
+Gecerli TLS'i bozmak, Set-Cookie headeri olusturmak veya gercek IDOR'u
+host etmek GitHub Pages ile mumkun degildir. Bulunmamasi beklenen bazi
+kontroller hakkinda README.md'yi oku.
